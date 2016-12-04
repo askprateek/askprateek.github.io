@@ -1,0 +1,201 @@
+@import 'https://fonts.googleapis.com/css?family=Cuprum';
+/* Common CSS */
+html,body{
+    background: #F44336;
+    min-height: 100vh;
+}
+.side-nav{
+    background: #F44336;
+    box-shadow: none;
+}
+section{
+    min-height: 100vh;
+}
+
+nav{
+    background: none;
+    box-shadow: none;
+    text-transform: uppercase;
+    position: absolute;
+}
+.side-nav a{
+    font-size: 24px;
+    color : white;
+}
+nav .button-collapse{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+@keyframes scale{
+    0%,100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+    }
+    25% , 75% {
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -o-transform: scale(0.8);
+    }
+}
+.scale{
+    animation: scale 2s ease-in-out;
+}
+@keyframes pop{
+    0% {transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+    }
+    
+    50% {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+    }
+    
+    100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+    }
+}
+@-o-keyframes pop{
+    0% {transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+    }
+    
+    50% {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+    }
+    
+    100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+    }
+}
+@-moz-keyframes pop{
+    0% {transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+    }
+    
+    50% {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+    }
+    
+    100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+    }
+}
+@-webkit-keyframes pop{
+    0% {transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+    }
+    
+    50% {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+    }
+    
+    100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+    }
+}
+
+/* SVG */
+#svg{
+    width: 80%;
+    animation: pop 10s 4s infinite ease-in-out;
+    -webkit-animation: pop 10s 4s infinite ease-in-out;
+    -moz-animation: pop 10s 4s infinite ease-in-out;
+    -o-animation: pop 10s 4s infinite ease-in-out;
+}
+
+
+@media only screen and (max-width :720px){
+    #svg{
+        height: 100%;
+    }
+}
+
+/* Contact SECTION CSS*/
+#contact{
+    padding-top: 20vh; 
+/*    background: #000;*/
+    background: url('../../img/me.jpg') no-repeat;
+    background-position: right;
+    background-size:contain;
+}
+@media only screen and (max-width:800px){
+    #contact{
+        background: #000;
+    }
+    #contact .container{
+        border:2px solid #FFF;
+        border-radius : 2px;
+    }
+}
+#contact .container{   
+/*    border: 2px solid white;*/
+/*    border-radius :3px;*/
+    padding-left:  5%;
+    padding-right: 5%;
+}
+#contact img{
+    position: relative;
+    top:-132px;
+    margin-bottom:-170px; 
+}
+@media only screen and (min-width: 600px){
+    .links {
+        border: 2px solid #FFF;
+    }
+    .links:hover{
+        background: #FFF;
+        transition: .3s;
+        color: #03A9F4;
+    }
+    .links:hover a{
+        color : #03A9F4;
+        transition: .3s;
+    }
+}
+
+
+@media only screen and (max-width: 790px){
+    .links {
+        font-size: 150%;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .links{
+        margin-top:10px;
+        color:black;
+        background:#FFF;
+    }
+    .links:hover{
+        color: #03A9F4;
+        font-size:150%;
+    }
+}
+
+
+img {
+    max-height: 80vh;
+}

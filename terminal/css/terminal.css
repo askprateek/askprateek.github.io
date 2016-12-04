@@ -1,0 +1,120 @@
+* {
+/*    box-sizing: border-box;*/
+}
+
+html,body {
+  margin: 0;
+  background: white;
+overflow: hidden;
+}
+section{
+  position: relative;
+  height: 100vh;
+  margin: 0px;
+}
+h1,h2,h3,h4,h5,h6,#help{
+  font-family: 'Roboto', sans-serif;
+}
+
+i.medium{
+  background: white;
+  border-radius: 100%;
+}
+.help-icon{
+  z-index: 10;
+  cursor: pointer;
+  position: absolute;
+  color:black;
+  bottom :5%;
+  right :5%;
+}
+#aa_particles {
+  width: 100%;
+  background: black;
+}
+.thin {
+  color: black;
+  text-align: center;
+}
+
+.main
+ {
+  position: absolute;
+  z-index: 5;
+  top: 20%;
+  right: 0;
+  left: 0;
+  margin: 0  auto;
+}
+.list{
+  list-style: none;
+  display: inline;
+}
+.terminal{
+  margin:1px;
+  font-size: 13px;
+  display: inline-block;
+  text-align: center;
+}
+
+.browser-window{
+  background: white;
+  width: 100%;
+  height: 351px;
+  font-size: 15px;
+  color: black;
+  display:inline-block;
+  margin: 0;
+  padding: 10px;
+}
+.top-bar{
+  text-align: left;
+  padding: 1px;
+  padding-left: 5px;
+  background: #cccccc;
+  height: 25px;
+  border-radius:5px 5px 0 0;
+}
+
+.circle{
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: black;
+  display: inline-block;;
+  margin-top:7px;
+  margin-left: 2px;
+}
+
+.content{
+  cursor: default;
+  font-size: 15px;
+  line-height: normal;
+  font-family: 'Ubuntu Mono', monospace;
+  overflow: auto;
+  overflow-y: auto;
+  max-height: 200px;
+
+}
+
+.user, #root{
+  color:#ff5722;
+}
+.output{
+  color:rgb(117, 172, 237);
+}
+
+.input-area{
+  display: flex;
+  font-size: 15px;
+  line-height: normal;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+input[type='text'],input[type=text]:focus:not([readonly]){
+  border: 0px solid;
+  height: 1rem;
+  width: 60%;
+  margin-left: 8px;
+  box-shadow: none;
+}
