@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirect Page</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        height: 100vh;
+        background-color: #de7848;
+        font-family: Arial, sans-serif;
+      }
+      .message {
+        text-align: center;
+      }
+      img {
+        width: 90%;
+        height: auto;
+      }
+      h1 {
+        color: white;
+        font-size: 2rem;
+      }
+      a {
+        /* text-decoration: none; */
+        text-decoration-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="message">
+      <img src="/img/cover.png" />
+      <a
+        id="redirect-link"
+        href="https://open.spotify.com/track/5WpqozSNzm29cj0aPClGAJ?si=6c153b23b5414bf6"
+      >
+        <h1>Tu Aur Mein</h1>
+      </a>
+      <!-- <img src="/img/tu-aur-mein.png" > -->
+      <!-- <h1>You are being redirected...</h1>
+        <p>If you are not redirected automatically, <a id="redirect-link" href="https://open.spotify.com/track/5WpqozSNzm29cj0aPClGAJ?si=6c153b23b5414bf6">click here</a>.</p> -->
+    </div>
+    <script>
+      const url =
+        "https://open.spotify.com/track/5WpqozSNzm29cj0aPClGAJ?si=6c153b23b5414bf6"; // Replace with your desired URL
+      document.getElementById("redirect-link").href = url;
+      setTimeout(() => {
+        window.location.href = url;
+      }, 2000); // Redirects after 3 seconds
+    </script>
+  </body>
+</html>
